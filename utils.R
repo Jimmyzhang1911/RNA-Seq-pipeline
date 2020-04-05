@@ -1,0 +1,8 @@
+options(stringsAsFactors = F)
+options(repos="http://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+options(BioC_mirror="http://mirrors.tuna.tsinghua.edu.cn/bioconductor/")
+library(tidyverse)
+library(pheatmap)
+library(tidyverse)
+library(readr)
+library(PCAtools)
