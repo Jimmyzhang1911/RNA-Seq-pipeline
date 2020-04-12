@@ -8,10 +8,10 @@
 样本信息表：samples.txt
 ## STEP1_比对：
 **hisat2**: sample.fastq + genome.fasta => sample.bam (每个序列比对到基因组的位置)
-step1: 构建index:    `hisat-build`   sample.fastq => index/genome
-step2: 比对`hisat2`sample.fastq + index => sample.sam
-step3: 压缩和排序`samtools sort`sample.sam => sample.bam 
-step4: 构建bam文件索引`samtools index`sample.bam => sample.bam.bai(IGV对比对结果进行可视化需要)
+- step1: 构建index:    `hisat-build`   sample.fastq => index/genome
+- step2: 比对`hisat2`sample.fastq + index => sample.sam
+- step3: 压缩和排序`samtools sort`sample.sam => sample.bam 
+- step4: 构建bam文件索引`samtools index`sample.bam => sample.bam.bai(IGV对比对结果进行可视化需要)
 ```
 #使用awk和samples.txt批量生成脚本
 $ hisat-build ../ref/genome.fasta ../ref/genome 1>hisat2-build.log 2>&1 #构建index
